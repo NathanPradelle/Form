@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page d'inscription au site de l'ESGI">
+        <title>Inscription | ESGI</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <h1>Inscription</h1>
+        </header>
+        <main>
+            <form>
+                <div>
+                    <label class="text-input" for="firstname">Prénom</label>
+                    <input class="text-area" type="text" id="firstname" placeholder="John" pattern="[\w-]{3,16}" required autofocus>
+                </div>
+                <div>
+                    <label class="text-input" for="lastname">Nom</label>
+                    <input class="text-area" type="text" id="lastname" placeholder="DOE" pattern="[\w-]{3,16}" required>
+                </div>
+                <div>
+                    <label class="text-input" for="email">Email</label>
+                    <input class="text-area" type="email" id="email" placeholder="email@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+                <div>
+                    <label class="text-input" for="password">Mot de passe</label>
+                    <input class="text-area" type="password" id="password" pattern="[\w\W/]{3,16}" required>
+                </div>
+                <div class="ligne">
+                    <label class="longtext-input" for="passwordConfirmation">Mot de passe de confirmation</label>
+                    <input class="text-area" type="password" id="passwordConfirmation" pattern="[\w\W/]{3,16}" required>
+                </div>
+                <div class="ligne">
+                    <label class="radio" for="bachelor">Bachelor</label>
+                    <input type="radio" id="bachelor" name="contact"><br>
+                </div>
+                <div class="ligne">
+                    <label class="radio" for="master">Mastère</label>
+                    <input type="radio" id="master" name="contact"><br>
+                </div>
+                <div>
+                    <label for="specialization">Spécialisation</label>
+                    <select name="Spécialisation" id="specialization" required>
+                        <option value="web">IW</option>
+                        <option value="software">AL</option>
+                        <option value="mobility">MOC</option>
+                        <option value="blockchain">IBC</option>
+                        <option value="ia">IABD</option>
+                        <option value="videogames">IRVJV</option>
+                        <option value="network">SRC</option>
+                        <option value="security">SI</option>
+                        <option value="management">MCSI</option>
+                    </select>
+                </div>
+                <div class="Btn">
+                    <button type="submit">Inscription</button>
+                </div>   
+            </form>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://facebook.com/esgi" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/esgi" target="blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/esgi" target="blank">Twitter</a>
+                </li>
+            </ul>
+        </footer>
+        <script src='script.js'></script>
+    </body>
+</html>
